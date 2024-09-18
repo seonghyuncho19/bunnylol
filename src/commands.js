@@ -86,7 +86,7 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     g: {
         name: "Google",
         url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q=&udm=14"
+        searchurl: "https://www.google.com/search?q=" + "&udm=14"
     },
     vs: {
         name: "VS Code",
@@ -108,6 +108,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     DEFAULT: {
         name: "Default - Google Search",
         url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q=&udm=14"
+        searchurl: "https://www.google.com/search?q=" + "&udm=14"
     }
 };
