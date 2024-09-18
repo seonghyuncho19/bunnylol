@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,14 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    $: {
+        name: "Charles Schwab",
+        url: "https://schwab.com"
+    },
+    edit: {
+        name: "Edit Commands",
+        url: "https://github.com/seonghyuncho19/bunnylol/edit/master/src/commands.js"
+    },
     neb: {
         name: "Nebula",
         url: "https://nebula.tv",
