@@ -1,5 +1,5 @@
 {
-  "name": "rithik-bunnylol",
+  "name": "bunnylol",
   "main": "main.js",
   "scripts": {
     "build": "babel src/ -d compiled/",
