@@ -37,7 +37,7 @@ DEFAULT | Default - Google Search | [https://google.com/](https://google.com/)
 
 2. Open up the `src/commands.js` file. Add your command to the `COMMANDS` object. You must include a `name` and `url` attribute and you can add an additional `searchurl` attribute if you would to be able to type a command like `yt NBA Highlights` (in which case, `bunnylol` will automatically search for NBA Highlights on YouTube).
 
-3. Run `npm run prepublish`.
+3. Run `npm run build; npm run bundle; npm run minify`.
 
 4. Publish to your website.
 
