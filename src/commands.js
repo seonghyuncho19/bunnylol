@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' |
-                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
+                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books';
 
 export type CommandDataTableType = {|
     name: string, 
@@ -21,6 +21,11 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    books: {
+        name: "Anna's Archive",
+        url: "https://annas-archive.org/",
+        searchurl: "https://annas-archive.org/search?q="
+    },
     tunes: {
         name: "Spotify",
         url: "spotify://"
