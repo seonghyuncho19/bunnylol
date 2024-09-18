@@ -35,7 +35,7 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     },
     work: {
         name: "DeloitteNet",
-        url: "https://my.dnet.deloittenet.com"
+        url: "https://my.dnet.deloitte.com"
     },
     ynab: {
         name: "You Need A Budget",
