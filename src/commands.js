@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,18 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    ppl: {
+        name: "DPN",
+        url: "people.deloitte"
+    },
+    work: {
+        name: "DeloitteNet",
+        url: "my.dnet.deloittenet.com"
+    },
+    ynab: {
+        name: "You Need A Budget",
+        url: "ynab.com"
+    },
     $: {
         name: "Charles Schwab",
         url: "https://schwab.com"
