@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,14 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    tunes: {
+        name: "Spotify",
+        url: "spotify://"
+    },
+    teams: {
+        name: "Teams",
+        url: "Teams://"
+    },    
     ppl: {
         name: "DPN",
         url: "https://people.deloitte"
