@@ -23,15 +23,15 @@ export type ColumnDataTableType = {|
 export const COMMANDS: {[CommandNames] : CommandType} = {
     ppl: {
         name: "DPN",
-        url: "people.deloitte"
+        url: "https://people.deloitte"
     },
     work: {
         name: "DeloitteNet",
-        url: "my.dnet.deloittenet.com"
+        url: "https://my.dnet.deloittenet.com"
     },
     ynab: {
         name: "You Need A Budget",
-        url: "ynab.com"
+        url: "https://ynab.com"
     },
     $: {
         name: "Charles Schwab",
@@ -86,7 +86,7 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     g: {
         name: "Google",
         url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q=%s&udm=14"
+        searchurl: "https://www.google.com/search?q=&udm=14"
     },
     vs: {
         name: "VS Code",
@@ -108,6 +108,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     DEFAULT: {
         name: "Default - Google Search",
         url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q="
+        searchurl: "https://www.google.com/search?q=&udm=14"
     }
 };
