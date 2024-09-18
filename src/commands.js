@@ -108,6 +108,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     DEFAULT: {
         name: "Default - Google Search",
         url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q="
+        searchurl: "https://www.google.com/search?q=%s&udm=14"
     }
 };
