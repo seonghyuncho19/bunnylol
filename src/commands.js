@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' | 'maps' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,12 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    maps: {
+        name: "Google Maps",
+        url: "https://www.google.com/maps",
+        searchurl: "https://www.google.com/maps/search/"
+    },
+    
     books: {
         name: "Anna's Archive",
         url: "https://annas-archive.org/",
