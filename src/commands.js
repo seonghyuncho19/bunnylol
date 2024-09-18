@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,10 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
+    neb: {
+        name: "Nebula",
+        url: "https://nebula.tv",
+    },    
     fb: {
         name: "Facebook",
         url: "https://facebook.com/",
