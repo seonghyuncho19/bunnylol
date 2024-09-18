@@ -6,7 +6,7 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'fpl' | 'ynab' |
+export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' |
                            'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,14 +21,6 @@ export type ColumnDataTableType = {|
 |};
 
 export const COMMANDS: {[CommandNames] : CommandType} = {
-    ynab: {
-        name: "You Need a Budget",
-        url: "https://youneedabudget.com"
-    },
-    fpl: {
-        name: "FPL",
-        url: "https://fantasy.premierleague.com/my-team"
-    },
     neb: {
         name: "Nebula",
         url: "https://nebula.tv",

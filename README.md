@@ -19,7 +19,6 @@ l | Linkedin | [https://linkedin.com/](https://linkedin.com/)
 g | Google | [https://google.com/](https://google.com/)
 vs | VS Code | [vscode://](vscode://)
 wut | Wikipedia | [https://wikipedia.org](https://wikipedia.org)
-ynab | YouNeedABudget | [https://youneedabudget.com](https://youneedabudget.com)
 DEFAULT | Default - Google Search | [https://google.com/](https://google.com/)
 
 ## Setup
