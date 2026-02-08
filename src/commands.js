@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' | 'maps' |
-                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books' | 'time' ;
+                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books' | 'nsheet' | 'nodc';
 
 export type CommandDataTableType = {|
     name: string, 
@@ -130,9 +130,14 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         searchurl: "https://www.google.com/search?q="
     },
 
-    time: {
-        name: "DTE",
-        url: "dte.deloittenet.com"
+    nsheet: {
+        name: "New Sheet",
+        url: "https://docs.google.com/spreadsheets/u/0/create?usp=sheets_home&ths=true"
+    },
+
+    ndoc: {
+        name: "New Google Doc",
+        url: "https://docs.google.com/document/u/0/create?usp=docs_home&ths=true"
     }
    
 };
