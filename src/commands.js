@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'mw' | 'gm' | 'yt' | 'gh' | 'r' | 'l' | 'vs' | 'todo' | 'neb' | 'edit' | '$' | 'ynab' | 'ppl' | 'work' | 'tunes' | 'teams' | 'maps' |
-                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books' | 'nsheet' | 'nodc';
+                           'cal' | 'gd' | 'wut' | 'g' | 'DEFAULT' | 'books' | 'nsheet' | 'nodc' | 'time';
 
 export type CommandDataTableType = {|
     name: string, 
@@ -138,6 +138,11 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     ndoc: {
         name: "New Google Doc",
         url: "https://docs.google.com/document/u/0/create?usp=docs_home&ths=true"
+    },
+
+    time: {
+        name: "DTE",
+        url: "https://dte.deloitte.com/te/ExpenseSummary.aspx"
     }
    
 };
